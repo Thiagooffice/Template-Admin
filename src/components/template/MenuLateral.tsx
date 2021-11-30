@@ -7,6 +7,8 @@ export default function MenuLateral(){
     return(
         <aside className={`
         flex flex-col
+        dark:bg-gray-900 
+        bg-gray-200 text-gray-700
         `}>
             <div className={`
             flex flex-col items-center justify-center
@@ -22,7 +24,8 @@ export default function MenuLateral(){
             </ul>
             <ul>
             <MenuItem className={`
-            text-red-600 hover:bg-red-400 hover:text-white
+            text-red-600 dark:text-red-400 hover:bg-red-400 hover:text-white
+            dark:hover:text-white
             `} texto="Sair" icone={IconeSair}
             onCLick={()=> console.log("logout")}
             />
